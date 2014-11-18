@@ -23,6 +23,11 @@ public class Robots {
     "/jackbass"
     "/jackperc"
     */
+
+    // 0-18
+    fun void bass(int num, int vel) {
+        note("/jackbass", num, vel);
+    }
     
     // 0-4, 14, 16-17
     fun void clappers(int num, int vel) {
@@ -60,6 +65,8 @@ Robots rob;
 
 while (true) {
     rob.gtr(1, 127);
+    0.5::second => now;
+    rob.gtr(1, 0);
     
-    1::second => now;
+    0.5::second => now;
 }
