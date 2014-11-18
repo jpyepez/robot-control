@@ -14,20 +14,26 @@ public class Robots {
         out.send();
     }
 
-    /* osc address
+    /* osc addresses
     "/drumBot"
-    "/mahadevi"
+    "/devibot"
     "/ganapati"
     "/clappers"
     "/jackguitar"
     "/jackbass"
     "/jackperc"
     */
+
+    // 0-1, 4-8, 10 -11
+    fun void devi(int num, int vel) {
+        note("/devibot", num, vel); 
+    }
 }
 
 Robots rob;
 
 while (true) {
-    rob.note("/drumBot", 0, 127);
+    rob.devi(12, 127);
+
     1::second => now;
 }
