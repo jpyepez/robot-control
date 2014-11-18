@@ -24,16 +24,27 @@ public class Robots {
     "/jackperc"
     */
 
+    // 0-4, 14, 16-17
+    fun void clappers(int num, int vel) {
+        note("/clappers", num, vel);
+    }
+
+    fun void drum(int num, int vel) {
+        note("/drumBot", num, vel);
+    }
+
     // 0-1, 4-8, 10 -11
     fun void devi(int num, int vel) {
         note("/devibot", num, vel); 
     }
+
+
 }
 
 Robots rob;
 
 while (true) {
-    rob.devi(12, 127);
+    rob.clappers(20, 127);
 
     1::second => now;
 }
