@@ -13,9 +13,9 @@ public class Robots {
         out.add(vel);
         out.send();
     }
-
+    
     /* osc addresses
-    "/drumBot"
+    "/drumBot" 0-1, 3, 5-9, 11-12
     "/devibot"
     "/ganapati"
     "/clappers"
