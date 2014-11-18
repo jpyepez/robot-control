@@ -49,7 +49,7 @@ public class Robots {
         note("/ganapati", num, vel); 
     }
     
-    //
+    // 0-33
     fun void gtr(int num, int vel) {
         note("/jackgtr", num, vel);
     }
@@ -64,9 +64,7 @@ public class Robots {
 Robots rob;
 
 while (true) {
-    rob.gtr(1, 127);
-    0.5::second => now;
-    rob.gtr(1, 0);
+    rob.gtr(31, 127);
     
-    0.5::second => now;
+    1::second => now;
 }
