@@ -19,7 +19,7 @@ public class Robots {
     "/devibot"
     "/ganapati"
     "/clappers"
-    "/jackguitar"
+    "/jackgtr"
     "/jackbass"
     "/jackperc"
     */
@@ -38,13 +38,18 @@ public class Robots {
         note("/devibot", num, vel); 
     }
 
+    // 0-18
+    fun void bass(int num, int vel) {
+        note("/jackbass", num, vel);
+    }
+
 
 }
 
 Robots rob;
 
 while (true) {
-    rob.clappers(20, 127);
+    rob.bass(17, 127);
 
     1::second => now;
 }
