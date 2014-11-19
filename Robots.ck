@@ -21,7 +21,7 @@ public class Robots {
     }
     
     // 0-4, 14, 16-17
-    fun void clappers(int num, int vel) {
+    fun void clap(int num, int vel) {
         note("/clappers", num, vel);
     }
     
