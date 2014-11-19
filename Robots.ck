@@ -6,7 +6,8 @@ public class Robots {
     
     // fibonacci port number
     ("chuckServer.local", 11235) => out.dest;
-
+    
+    // main function for to send OSC to the robots
     fun void note(string addr, int num, int vel) {
         out.start(addr);
         out.add(num);
@@ -14,17 +15,7 @@ public class Robots {
         out.send();
     }
     
-    /* osc addresses
-    "/drumBot" 
-    "/devibot"
-    "/ganapati"
-    "/clappers"
-    "/jackgtr"
-    "/jackbass"
-    "/jackperc"
-    */
-
-    // 0-18
+    // 0-23
     fun void bass(int num, int vel) {
         note("/jackbass", num, vel);
     }
@@ -58,13 +49,4 @@ public class Robots {
     fun void perc(int num, int vel) {
         note("/jackperc", num, vel);
     }
-    
-}
-
-Robots rob;
-
-while (true) {
-    rob.gtr(31, 127);
-    
-    1::second => now;
 }
