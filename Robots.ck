@@ -14,7 +14,7 @@ public class Robots {
         out.add(vel);
         out.send();
     }
-    
+
     // 0-23
     fun void bass(int num, int vel) {
         note("/jackbass", num, vel);
