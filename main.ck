@@ -22,19 +22,35 @@ Robots rob;
 
 [0, 1, 2, 3, 4, 5, 6, 7] @=> int perc[];
 
-// plays all the robots controlled by the main fader (to be revised?)
-
+// plays all the robots controlled by the main fader
 fun void allPlay() {
     for (int i; i < clap.cap(); i++) {
         spork ~ allClap(i);
     }
+    
+    for (int i; i < drum.cap(); i++) {
+        spork ~ allDrum(i);
+    }
+    
+    for (int i; i < devi.cap(); i++) {
+        spork ~ allDevi(i);
+    }
+    
+    for (int i; i < gana.cap(); i++) {
+        spork ~ allGana(i);
+    }
+    
+    for (int i; i < perc.cap(); i++) {
+        spork ~ allPerc(i);
+    }
+    
     while (true){
         1::second => now;
     }    
 }
 
 
-
+// clappers function to be sporked in allPlay
 fun void allClap(int which) {
     while (true) {
         if (Math.random2(0, 127) <= q.fader) {
@@ -44,6 +60,48 @@ fun void allClap(int which) {
     }
 }
 
+
+// drumBot function to be sporked in allPlay
+fun void allDrum(int which) {
+    while (true) {
+        if (Math.random2(0,127) <= q.fader) {
+            rob.drum(which, Math.random2(0,127));
+        }
+        Math.random2(10, 1000)::ms => now;
+    }
+}
+
+
+// devi function to be sporked in allPlay
+fun void allDevi(int which) {
+    while (true) {
+        if (Math.random2(0,127) <= q.fader) {
+            rob.devi(which, Math.random2(0,127));
+        }
+        Math.random2(10, 1000)::ms => now;
+    }
+}
+
+
+// gana function to be sporked in allPlay
+fun void allGana(int which) {
+    while (true) {
+        if (Math.random2(0,127) <= q.fader) {
+            rob.gana(which, Math.random2(0,127));
+        }
+        Math.random2(10, 1000)::ms => now;
+    }
+}
+
+// jackperc function to be sporked in allPlay
+fun void allPerc(int which) {
+    while (true) {
+        if (Math.random2(0,127) <= q.fader) {
+            rob.perc(which, Math.random2(0,127));
+        }
+        Math.random2(10, 1000)::ms => now;
+    }
+}
 
 
 // spork allplay function
