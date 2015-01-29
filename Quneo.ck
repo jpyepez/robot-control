@@ -1,5 +1,5 @@
 // Quneo.ck
-// Dexter Shepherd and Eric Heep
+// Dexter Shepherd, Eric Heep and JP Yepez
 // CalArts Music Tech // MTIID4LIFE
 // class for communicating with ChucK and a Quneo
 
@@ -20,6 +20,10 @@ public class Quneo {
     MidiOut mout[10];
     MidiMsg msgIn;
     MidiMsg msgOut;
+
+    // create static events for pad note on and off messages
+    static Event padOn[];
+    static Event padOff[];
     
     spork ~ update();
     
@@ -45,6 +49,7 @@ public class Quneo {
             min[port] => now;
             while (min[port].recv(msgIn)) {
                 getValues(msgIn.data1, msgIn.data2, msgIn.data3);
+                //<<< msgIn.data1, msgIn.data2, msgIn.data3 >>>;    // midi message monitor
             }
         }
     }
@@ -54,6 +59,8 @@ public class Quneo {
         if((data1 == 144)||(data1 == 128)){
             for (int i; i < 16; i++){
                 if(data2 == i + 84){
+                    if(data1 == 144) padOn[i].broadcast();
+                    if(data1 == 128) padOff[i].broadcast();
                     data3 => pad[i];
                 }
             }
@@ -137,3 +144,30 @@ public class Quneo {
         mout[port].send(msgOut);
     }
 }
+
+// define static array size for on and off events
+new Event[16] @=> Quneo.padOn;
+new Event[16] @=> Quneo.padOff;
+
+// commented out: pad monitoring
+/*
+Quneo q;
+
+fun void padTest( int index ) {
+
+    while( true ) {
+        q.padOn[index] => now;
+        <<< "pad ", index, " on!!!" >>>; 
+
+        q.padOff[index] => now;
+        <<< "pad ", index, " off!!!" >>>; 
+    }
+}
+
+for(0 => int i; i < q.padOn.cap(); i++){
+    spork ~ padTest( i );
+}
+
+while( true ) second => now;
+*/
+

@@ -189,121 +189,197 @@ for (int i; i < perc.cap(); i++) {
 }
 
 
+// play random clappers using pad 14
+fun void clapPad14() {
+    int clapChance;
+    while (true) {
+        q.padOn[14] => now;
+        for(0 => int i; i < clap.cap(); i++){
+            Math.random2(0,1) => clapChance;
+            if(clapChance) rob.clap(clap[i], q.pad[14]);
+        }
+    }
+}
+
+//spork clappers pad function
+spork ~ clapPad14();
+
 // play drumBot using pads 0, 4, 8 and 12 (left column)
-fun void drumPads() {
-    while (true) {   
-        if( q.slider[1] == 0 && q.fader == 0 ) {     
-            for( int i; i < drum.cap(); i++ ) {
-                if( i < 2 ) {
-                    rob.drum(drum[i], q.pad[0]);            
-                }
-                
-                if( i == 2) {
-                    rob.drum(drum[i], q.pad[8]);
-                }
-                
-                if( i == 3) {
-                    rob.drum(drum[i], q.pad[4]);
-                }
-                
-                if( i >= 4 ) {
-                    rob.drum(drum[i], q.pad[12]);
-                }
-            }
-            
-        } 
-        10::ms => now;        
-    }  
+fun void drumPad0() {
+    while (true) {
+        q.padOn[0] => now;
+        rob.drum(drum[0], q.pad[0]);
+        rob.drum(drum[1], q.pad[0]);
+    }
+}
+
+fun void drumPad4() {
+    while (true) {
+        q.padOn[4] => now;
+        rob.drum(drum[3], q.pad[4]);
+    }
+}
+
+fun void drumPad8() {
+    while (true) {
+        q.padOn[8] => now;
+        rob.drum(drum[2], q.pad[8]);
+    }
+}
+
+fun void drumPad12() {
+    while (true) {
+        q.padOn[12] => now;
+        for( 4 => int i; i < drum.cap(); i++ ) {
+            rob.drum(drum[i], q.pad[12]);
+        }
+    }
 }
 
 // spork drumBot pad function
-spork ~ drumPads();
+spork ~ drumPad0();
+spork ~ drumPad4();
+spork ~ drumPad8();
+spork ~ drumPad12();
+
 
 
 // play deviBot using pads 1, 5, 9 and 13 (2nd column from the left)
-fun void deviPads() {
+fun void deviPad1() {
     while (true) {
-        if( q.slider[2] == 0 && q.fader == 0 ) {
-            
-            for( int i; i < devi.cap(); i++ ) {
-                if( i == 0 ) {
-                    rob.devi(devi[i], q.pad[1]);
-                }
-                if( i == 1 || i == 7 || i == 8 ) {
-                    rob.devi(devi[i], q.pad[5]);
-                }
-                
-                if( i == 2 ) {
-                    rob.devi(devi[i], q.pad[13]);
-                }
-                if( i >= 3 && i <= 6) {
-                    rob.devi(devi[i], q.pad[9]);
-                }
-            }
-            
-        }
-        10::ms => now;
+        q.padOn[1] => now;
+        rob.devi(devi[0], q.pad[1]);
     }
 }
 
-// spork deviBot pad function
-spork ~ deviPads();
+fun void deviPad5() {
+    while (true) {
+        q.padOn[5] => now;
+        rob.devi(devi[1], q.pad[5]);
+        rob.devi(devi[7], q.pad[5]);
+        rob.devi(devi[8], q.pad[5]);
+    }
+
+}
+
+fun void deviPad9() {
+    while (true) {
+        q.padOn[9] => now;
+        for( 3 => int i; i <= 6; i++){
+            rob.devi(devi[i], q.pad[9]);
+        }
+    }
+}
+
+fun void deviPad13() {
+    while (true) {
+        q.padOn[13] => now;
+        rob.devi(devi[2], q.pad[13]);
+    }
+}
+
+// spork deviBot pad functions
+spork ~ deviPad1();
+spork ~ deviPad5();
+spork ~ deviPad9();
+spork ~ deviPad13();
 
 
 // play ganaPati using pads 2, 6 and 10 (2nd column from the right)
-fun void ganaPads() {
+fun void ganaPad2() {
     while (true) {
-        if( q.slider[3] == 0 && q.fader == 0 ) {
-            for( int i; i < gana.cap(); i++ ) {
-                if( i == 0 ) {
-                    rob.gana(gana[i], q.pad[6] );
-                }
-                if( i == 1 || i ==2 ) {
-                    rob.gana(gana[i], q. pad[10] );            
-                }
-                if( i >= 3 ) {
-                    rob.gana(gana[i], q.pad[2] );            
-                }
-            }
+        q.padOn[2] => now;
+        for( 2 => int i; i < gana.cap(); i++){
+            rob.gana(gana[i], q.pad[2]);
         }
-        10::ms => now;
+    }    
+}
+
+fun void ganaPad6() {
+    while (true) {
+        q.padOn[6] => now;
+        rob.gana(gana[0], q.pad[6]);
     }   
 }
 
-// spork ganaPati pad function
-spork ~ ganaPads();
-
-
-// play jackPerc using pads 3, 7, 11, and 15 (right column)
-fun void percPads() {
+fun void ganaPad10() {
     while (true) {
-        if( q.slider[3] == 0 && q.fader == 0 ) {
-            for( int i; i < perc.cap(); i++ ) {
-                if( i == 1 ) {
-                    rob.perc( perc[i], q.pad[11] );
-                }
-                if( i >= 2 || i <= 4 ) {
-                    rob.perc( perc[i], q.pad[15] );
-                }
-                if( i == 5 || i == 6 ) {
-                    rob.perc( perc[i], q.pad[7] );
-                }
-                if( i == 7 ) {
-                    rob.perc( perc[i], q.pad[3] );        
-                }
-            }
-        }
-        10::ms => now;    
+        q.padOn[10] => now;
+        rob.gana(gana[1], q.pad[10]);
+        rob.gana(gana[2], q.pad[10]);
     }
 }
 
+// spork ganaPati pad function
+spork ~ ganaPad2();
+spork ~ ganaPad6();
+spork ~ ganaPad10();
+
+
+// play jackPerc using pads 3, 7, 11, and 15 (right column)
+fun void percPad3() {
+    while (true) {
+        q.padOn[3] => now;
+        rob.perc(perc[7], q.pad[3]);
+    }      
+}
+
+fun void percPad7() {
+    while (true) {
+        q.padOn[7] => now;
+        rob.perc(perc[5], q.pad[7]);
+        rob.perc(perc[6], q.pad[7]);
+    }      
+}
+
+fun void percPad11() {
+    while (true) {
+        q.padOn[11] => now;
+        rob.perc(perc[1], q.pad[11]);
+    }      
+}
+
+fun void percPad15() {
+    while (true) {
+        q.padOn[15] => now;
+        for( 2 => int i; i <= 4; i++ ) {
+            rob.perc(perc[i], q.pad[15]);
+        }
+    }      
+}
+
 // spork jackPerc pad function
-spork ~ percPads();
+spork ~ percPad3();
+spork ~ percPad7();
+spork ~ percPad11();
+spork ~ percPad15();
+
+
+// test jackbass with slider 7
+fun void slider7() {
+    while (true) {
+        if(q.slider[7]) {
+            rob.bass( bass[ Math.random2( 0, bass.cap()-1 )], q.slider[7]);
+        }
+        .5::second => now;
+    }
+}
+
+spork ~ slider7();
+
+// test jackgtr with slider 8
+fun void slider8() {
+    while (true) {
+        if(q.slider[8]) {
+            rob.gtr( gtr[ Math.random2( 0, gtr.cap()-1 )], q.slider[8]);
+        }
+        .5::second => now;
+    }
+}
+
+spork ~ slider8();
 
 // main program
-while( true ) {
-    
-    10::ms => now;
-}
+while( true ) second => now;
 
 

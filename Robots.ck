@@ -5,7 +5,7 @@ public class Robots {
     OscOut out;
     
     // fibonacci port number
-    ("chuckServer.local", 11235) => out.dest;
+    ("10.2.35.254", 4321) => out.dest;
     
     // main function for to send OSC to the robots
     fun void note(string addr, int num, int vel) {
