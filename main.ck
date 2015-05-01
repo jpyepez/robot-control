@@ -53,10 +53,10 @@ fun void allPlay() {
 // clappers function to be sporked in allPlay
 fun void allClap(int which) {
     while (true) {
-        if (Math.random2(1, 127) <= q.fader) {
+        if (Math.random2(4, 127) <= q.fader) {
             rob.clap(which, Math.random2(0, 127));
         }
-        Math.random2(10, 1000)::ms => now;
+        Math.random2(100, 1000)::ms => now;
     }
 }
 
@@ -64,10 +64,10 @@ fun void allClap(int which) {
 // drumBot function to be sporked in allPlay
 fun void allDrum(int which) {
     while (true) {
-        if (Math.random2(1,127) <= q.fader) {
+        if (Math.random2(4,127) <= q.fader) {
             rob.drum(which, Math.random2(0,127));
         }
-        Math.random2(10, 1000)::ms => now;
+        Math.random2(100, 1000)::ms => now;
     }
 }
 
@@ -75,10 +75,10 @@ fun void allDrum(int which) {
 // devi function to be sporked in allPlay
 fun void allDevi(int which) {
     while (true) {
-        if (Math.random2(1,127) <= q.fader) {
+        if (Math.random2(4,127) <= q.fader) {
             rob.devi(which, Math.random2(0,127));
         }
-        Math.random2(10, 1000)::ms => now;
+        Math.random2(100, 1000)::ms => now;
     }
 }
 
@@ -86,20 +86,20 @@ fun void allDevi(int which) {
 // gana function to be sporked in allPlay
 fun void allGana(int which) {
     while (true) {
-        if (Math.random2(1,127) <= q.fader) {
+        if (Math.random2(4,127) <= q.fader) {
             rob.gana(which, Math.random2(0,127));
         }
-        Math.random2(10, 1000)::ms => now;
+        Math.random2(100, 1000)::ms => now;
     }
 }
 
 // jackperc function to be sporked in allPlay
 fun void allPerc(int which) {
     while (true) {
-        if (Math.random2(1,127) <= q.fader) {
+        if (Math.random2(4,127) <= q.fader) {
             rob.perc(which, Math.random2(0,127));
         }
-        Math.random2(10, 1000)::ms => now;
+        Math.random2(100, 1000)::ms => now;
     }
 }
 
@@ -112,10 +112,10 @@ spork ~ allPlay();
 // function to play clappers randomly using slider[0]
 fun void clapPlay(int which) {
     while (true) {
-        if (Math.random2(1, 127) <= q.slider[0]) {
+        if (Math.random2(4, 127) <= q.slider[0]) {
             rob.clap(which, Math.random2(0, 127));
         }
-        Math.random2(10, 1000)::ms => now;
+        Math.random2(100, 1000)::ms => now;
     }
 }
 
@@ -128,10 +128,10 @@ for (int i; i < clap.cap(); i++) {
 // function to play drumBot randomly using slider[1]
 fun void drumPlay(int which) {
     while (true) {
-        if (Math.random2(1,127) <= q.slider[1]) {
+        if (Math.random2(4,127) <= q.slider[1]) {
             rob.drum(which, Math.random2(0,127));
         }
-        Math.random2(10, 1000)::ms => now;
+        Math.random2(100, 1000)::ms => now;
     }
 }
 
@@ -144,10 +144,10 @@ for (int i; i < drum.cap(); i++) {
 // function to play deviBot randomly using slider[2]
 fun void deviPlay(int which) {
     while (true) {
-        if (Math.random2(1,127) <= q.slider[2]) {
+        if (Math.random2(4,127) <= q.slider[2]) {
             rob.devi(which, Math.random2(0,127));
         }
-        Math.random2(10, 1000)::ms => now;
+        Math.random2(100, 1000)::ms => now;
     }
 }
 
@@ -160,10 +160,10 @@ for (int i; i < devi.cap(); i++) {
 // function to play ganaBot randomly using slider[3]
 fun void ganaPlay(int which) {
     while (true) {
-        if (Math.random2(1,127) <= q.slider[3]) {
+        if (Math.random2(4,127) <= q.slider[3]) {
             rob.gana(which, Math.random2(0,127));
         }
-        Math.random2(10, 1000)::ms => now;
+        Math.random2(100, 1000)::ms => now;
     }
 }
 
@@ -176,10 +176,10 @@ for (int i; i < gana.cap(); i++) {
 // function to play jackperc randomly using slider[6]
 fun void percPlay(int which) {
     while (true) {
-        if (Math.random2(1,127) <= q.slider[6]) {
+        if (Math.random2(4,127) <= q.slider[6]) {
             rob.perc(which, Math.random2(0,127));
         }
-        Math.random2(10, 1000)::ms => now;
+        Math.random2(100, 1000)::ms => now;
     }
 }
 
@@ -320,22 +320,22 @@ spork ~ ganaPad10();
 fun void percPad3() {
     while (true) {
         q.padOn[3] => now;
-        rob.perc(perc[7], q.pad[3]);
+        rob.gana(perc[7], q.pad[3]);
     }      
 }
 
 fun void percPad7() {
     while (true) {
         q.padOn[7] => now;
-        rob.perc(perc[5], q.pad[7]);
-        rob.perc(perc[6], q.pad[7]);
+        rob.gana(perc[5], q.pad[7]);
+        rob.gana(perc[6], q.pad[7]);
     }      
 }
 
 fun void percPad11() {
     while (true) {
         q.padOn[11] => now;
-        rob.perc(perc[1], q.pad[11]);
+        rob.gana(perc[1], q.pad[11]);
     }      
 }
 
@@ -343,7 +343,7 @@ fun void percPad15() {
     while (true) {
         q.padOn[15] => now;
         for( 2 => int i; i <= 4; i++ ) {
-            rob.perc(perc[i], q.pad[15]);
+            rob.gana(perc[i], q.pad[15]);
         }
     }      
 }
