@@ -1,0 +1,669 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tap",
+				"tapTempo_value"
+			],
+			[
+				"largeKnob",
+				"largeKnobCap"
+			],
+			[
+				"quarter",
+				"quarter"
+			],
+			[
+				"else",
+				"else	Else..."
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "master.ck",
+			"settings":
+			{
+				"buffer_size": 132,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.ck",
+			"settings":
+			{
+				"buffer_size": 7804,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Quneo.ck",
+			"settings":
+			{
+				"buffer_size": 4249,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Robots.ck",
+			"settings":
+			{
+				"buffer_size": 1049,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"\"chuck\", \"--kill\"",
+			"subprocess.call([\"chuck\", \"--kill\"])",
+			"import subprocess",
+			"import subprocess subprocess.call([\"chuck\", \"--kill\"])",
+			"subprocess.call([\"chuck\", \"--kill\"])",
+			"import subprocess",
+			"subprocess.call([\"chuck\", \"--kill\"])",
+			"import subprocess",
+			"subprocess.call([\"chuck\", \"--kill\"])",
+			"import subprocess",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Composition For Robots/Composition For Robots W2/Assignment W2.sublime-workspace",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push For ChucK/Push.ck",
+		"/Users/juanpabloyepez/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/9850FF0B-5957-47FD-B209-1544BD649A77/quneoForChuck.ck",
+		"/Users/juanpabloyepez/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/E30F7962-A849-4A4B-8DC1-BF0036AE01F4/quneoChuckPreset.quneopreset",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 2/2.2_library_unit_conversion.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 2/2.3_random_numbers.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 2/2.4_math_library.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 2/2.5_arrays.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 2/2.6_make_melody.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 2/2.2_library_unit_conversion.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 2/2.3_random_numbers.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 2/2.4_math_library.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 2/2.5_arrays.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 2/2.6_make_melody.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 1/1.1_Intro.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 1/1.2_history_intro.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 1/1.3_download_install.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 1/1.4_hello_sine.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 1/1.5_sine_score.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 1/1.6_data_types_variables.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 1/1.7_time_in_chuck.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 1/1.8_control_if_else.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 1/1.9_control_for_while.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - English/week 1/1.10_making_sound_oscillators.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 1/1.1_Intro.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 1/1.2_history_intro.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 1/1.3_download_install.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 1/1.4_hello_sine.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 1/1.5_sine_score.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 1/1.6_data_types_variables.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 1/1.7_time_in_chuck.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 1/1.8_control_if_else.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 1/1.9_control_for_while.srt",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/ChucK Videos - Spanish/week 1/1.10_making_sound_oscillators.srt",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push For ChucK/Push 2.0.sublime-workspace",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push For ChucK/pushColors.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push For ChucK/Push (old).ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push For ChucK/push piano demo.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push For ChucK/push monitor.ck",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/Translation.sublime-workspace",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push For ChucK/initialize_test.ck",
+		"/Users/juanpabloyepez/Desktop/Translations Ajay/Translation.sublime-project",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push For ChucK/test.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push For ChucK/Push Color.rtf",
+		"/Users/juanpabloyepez/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/initialize_test.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/test.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push (old).ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/push_data.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push_Core.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/push_connect.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push_Connect.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Pushconnect.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push 2.0a.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/Programming/ChucK/Push 2.0.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/Code Stuff/Static Arrays.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/Path.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/Push.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/BPM.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/ModBass.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/DrumMachine.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/Heavy.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/Granular.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/Keys.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/bass.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/granular1.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/heavyMartin.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/noise.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/piano.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/padsB.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/padsA.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/drumsA.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/drumsB.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/pushColors.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/launcher.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/initialize.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/Bounce Final Project.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/Final Project.sublime-project",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/serialtest.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/Final.zip",
+		"/Users/juanpabloyepez/Desktop/LedKnobButton.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/Heavy",
+		"/Users/juanpabloyepez/Desktop/test.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/piano",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/pads.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Classy Grooves/Piano.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/FullKeys.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/FullKeys",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/Noise.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/drums.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/drum_test.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/test.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/pad_test.ck",
+		"/Users/juanpabloyepez/Desktop/graph.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/Pad_test.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Ableton Push/Push.ck",
+		"/Users/juanpabloyepez/Desktop/untitled.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/JP Artist Stuff/EDM Ninja Blue.svg",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Interface Design/Interface Design Proposal/flex sensor.jpg.svg",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Ableton Live/Push.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Ableton Live/ShortI:O.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Ableton Live/PushMidiMonitor.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Ableton Live/:: Push.ck",
+		"/Users/juanpabloyepez/git/robot-control/Robots.ck",
+		"/Users/juanpabloyepez/git/robot-control/Quneo.ck",
+		"/Users/juanpabloyepez/git/robot-control/master.ck",
+		"/Users/juanpabloyepez/git/robot-control/main.ck",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Classy Grooves/score.ck",
+		"/Users/juanpabloyepez/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/juanpabloyepez/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/juanpabloyepez/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/juanpabloyepez/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Classy Grooves/initialize.ck",
+		"/Users/juanpabloyepez/Desktop/hi.ck"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"preset",
+			"matrí",
+			"diagrama",
+			"tabla",
+			"float",
+			"web",
+			"oscillador",
+			"rhythmFigures",
+			"track",
+			"stop",
+			"whiteButton",
+			"play",
+			"rhythm",
+			"rhythMfigures",
+			"volume",
+			"rhythmFigures",
+			"play",
+			"whiteButton",
+			"play",
+			"rhythmFigures",
+			"OctaveUp",
+			"mute",
+			"track",
+			"panAndSend",
+			"volume",
+			"stop",
+			"master",
+			"play",
+			"[];",
+			"static Event",
+			"duplicate",
+			"undo",
+			"metronome",
+			"tapTempo",
+			"record",
+			"newButton",
+			"automation",
+			"fixedLength",
+			"quantize",
+			"double",
+			"delete",
+			"undo",
+			"Event",
+			"static",
+			"int",
+			"large",
+			"monit",
+			"slider",
+			"monitor",
+			"estudiant",
+			"blackButton",
+			"smallKnob",
+			"<<<",
+			"master.gain",
+			"print",
+			"initial",
+			"master",
+			"print",
+			"padpress",
+			"<<<",
+			"play",
+			"<<<",
+			"3065",
+			"tab",
+			"shift+tab",
+			"tab",
+			"prev",
+			"tab"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"arrows",
+			"shift",
+			"select",
+			"session",
+			"user",
+			"scales",
+			"noteButton",
+			"addTrack",
+			"addEffect",
+			"octaveUp",
+			"octaveDown",
+			"accent",
+			"repeatButton",
+			"solo",
+			"mute",
+			"outButton",
+			"inButton",
+			"browse",
+			"device",
+			"clip",
+			"track",
+			"panAndSend",
+			"volume",
+			"rhythmFigures",
+			"stop",
+			"master",
+			"arrows",
+			"whiteButton",
+			"shift",
+			"select",
+			"shift",
+			"select",
+			"session",
+			"noteButton",
+			"addTrack",
+			"addEffect",
+			"octaveUp",
+			"octaveDown",
+			"accent",
+			"repeatButton",
+			"user",
+			"scales",
+			"solo",
+			"mute",
+			"outButton",
+			"inButton",
+			"browse",
+			"device",
+			"clip",
+			"track",
+			"panAndSend",
+			"whiteButtons",
+			"volume",
+			"rhythmFigures",
+			"stop",
+			"master",
+			"arrows",
+			"shift",
+			"select",
+			"session",
+			"noteButton",
+			"addTrack",
+			"addEffect",
+			"octaveUp",
+			"octaveDown",
+			"accent",
+			"repeatButton",
+			"user",
+			"scales",
+			"solo",
+			"mute",
+			"outButton",
+			"inButton",
+			"browse",
+			"device",
+			"clip",
+			"track",
+			"panAndSend",
+			"volume",
+			"stop",
+			"master",
+			";",
+			"new Event[] @=>",
+			"play",
+			"record",
+			"newButton",
+			"duplicate",
+			"automation",
+			"fixedLength",
+			"quantize",
+			"doubleButton",
+			"delete",
+			"undo",
+			"metronome",
+			"play",
+			"record",
+			"newButton",
+			"duplicate",
+			"automation",
+			"fixedLength",
+			"quantize",
+			"doubleButton",
+			"delete",
+			"Event[1]",
+			"new",
+			"Event",
+			"small"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "master.ck",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132,
+								132
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ChucK-plugin-for-ST3-master/ChucK.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "main.ck",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7804,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7281,
+								7281
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ChucK-plugin-for-ST3-master/ChucK.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 914.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "Quneo.ck",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4249,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2011,
+								2011
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ChucK-plugin-for-ST3-master/ChucK.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 979.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "Robots.ck",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1049,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								57
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ChucK-plugin-for-ST3-master/ChucK.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 439.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.513871596946,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "robot-control.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/My Folders/CalArts/CalArts Courses/Introduction to Programming for Musicians and Digital Artists/ChucK Projects/Final Project/test.ck"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
